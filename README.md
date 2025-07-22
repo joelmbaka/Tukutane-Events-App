@@ -35,7 +35,7 @@ This is my submission for the Tukutane Internship Challenge. I've built a mobile
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/joelmbaka/tukutane-events-app
    cd Tukutane
    ```
 

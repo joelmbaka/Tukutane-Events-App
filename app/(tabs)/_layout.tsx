@@ -31,6 +31,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="calendar"
+        options={{
+          title: 'My Calendar',
+          tabBarIcon: ({ color }) => <FontAwesome name="calendar" color={color} size={24} />,
+        }}
+      />
+      <Tabs.Screen
         name="about"
         options={{
           title: 'About',
@@ -46,13 +53,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'person' : 'person-outline'} color={color} size={24}/>
           ),
-        }}
-      />
-      <Tabs.Screen
-        name="calendar"
-        options={{
-          title: 'My Calendar',
-          tabBarIcon: ({ color }) => <FontAwesome name="calendar" color={color} size={24} />,
         }}
       />
     </Tabs>
