@@ -1,5 +1,9 @@
 import { Tabs } from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { FontAwesome } from '@expo/vector-icons';
+
+const Tab = createBottomTabNavigator();
 
 export default function TabLayout() {
   return (
@@ -42,6 +46,13 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'person' : 'person-outline'} color={color} size={24}/>
           ),
+        }}
+      />
+      <Tabs.Screen
+        name="calendar"
+        options={{
+          title: 'My Calendar',
+          tabBarIcon: ({ color }) => <FontAwesome name="calendar" color={color} size={24} />,
         }}
       />
     </Tabs>

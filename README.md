@@ -14,7 +14,7 @@ This is my submission for the Tukutane Internship Challenge. I've built a mobile
 
 #### Bonus Features
 - 🔒 User authentication (Sign In/Sign Up)
-- 📅 Save events to device calendar
+- 📅 Save events to google calendar
 - 🔍 Advanced filtering and search functionality
 - 💾 Offline support with AsyncStorage
 - 🔄 Pull-to-refresh for latest events

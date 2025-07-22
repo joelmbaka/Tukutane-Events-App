@@ -22,7 +22,7 @@ export default function SignIn() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>my health hub</Text>
+      <Text style={styles.title}>Sign In to Tukutane Events App</Text>
       <View style={[styles.verticallySpaced, styles.mt20]}>
         <Input
           label="Email"
