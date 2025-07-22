@@ -130,13 +130,15 @@ const HomeScreen = () => {
       </Modal>
       
       {width >= 768 ? (
-        <View style={styles.gridContainer}>
-          {filteredEvents.map((item, index) => (
-            <View key={item.id} style={styles.gridItem}>
-              <EventCard event={item} />
-            </View>
-          ))}
-        </View>
+        <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollViewContent}>
+          <View style={styles.gridContainer}>
+            {filteredEvents.map((item, index) => (
+              <View key={item.id} style={styles.gridItem}>
+                <EventCard event={item} />
+              </View>
+            ))}
+          </View>
+        </ScrollView>
       ) : (
         <FlatList
           data={filteredEvents}
@@ -175,6 +177,13 @@ const styles = StyleSheet.create({
   },
   list: {
     width: '100%',
+  },
+  scrollView: {
+    flex: 1,
+    width: '100%',
+  },
+  scrollViewContent: {
+    paddingBottom: 20, // Add some padding at the bottom
   },
   gridContainer: {
     width: '100%',

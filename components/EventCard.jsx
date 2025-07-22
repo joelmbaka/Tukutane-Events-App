@@ -91,10 +91,10 @@ const EventCard = ({ event }) => {
         </TouchableOpacity>
         <View style={styles.footer}>
           <Badge value={event.category?.name} status="primary" badgeStyle={styles.badge} />
-          <View style={styles.buttonGroup}>
+          <View style={[styles.buttonGroup, { paddingHorizontal: 16, paddingVertical: 8 }]}>
             <Button
               title="RSVP"
-              buttonStyle={styles.button}
+              buttonStyle={styles.button} 
               titleStyle={styles.buttonTitle}
               onPress={() => {
                 console.log('RSVP pressed');
